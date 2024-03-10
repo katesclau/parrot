@@ -1,0 +1,38 @@
+{
+  "name": "parrot",
+  "version": "1.0.0",
+  "description": "Parrot Notification Service",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest ",
+    "services": "docker-compose up -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katesclau/parrot.git"
+  },
+  "keywords": [
+    "SMS",
+    "EMAIL",
+    "BULL",
+    "K8S",
+    "Apollo"
+  ],
+  "author": "Diego Ferreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katesclau/parrot/issues"
+  },
+  "homepage": "https://github.com/katesclau/parrot#readme",
+  "dependencies": {
+    "bull": "^4.12.2",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.14",
+    "tslint": "^6.1.3",
+    "typescript": "^5.4.2"
+  }
+}
